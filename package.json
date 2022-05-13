@@ -13,8 +13,10 @@
     "@types/react-dom": "^18.0.3",
     "@types/react-redux": "^7.1.24",
     "axios": "^0.27.2",
+    "axios-mock-adapter": "^1.20.0",
     "react": "^18.1.0",
     "react-dom": "^18.1.0",
+    "react-localization": "^1.0.19",
     "react-redux": "^8.0.1",
     "react-router-dom": "^6.3.0",
     "react-scripts": "5.0.1",
@@ -43,6 +45,21 @@
       "last 1 chrome version",
       "last 1 firefox version",
       "last 1 safari version"
+    ]
+  },
+  "jest": {
+    "collectCoverageFrom": [
+      "src/**/*.js",
+      "src/**/*.ts",
+      "src/**/*.tsx",
+      "!**/node_modules/**"
+    ],
+    "coverageReporters": [
+      "text-summary"
+    ],
+    "testMatch": [
+      "**/*.test.js",
+      "**/*.test.ts"
     ]
   }
 }

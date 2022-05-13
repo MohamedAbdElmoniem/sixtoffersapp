@@ -1,0 +1,9 @@
+.appBtn {
+  border: 2px solid white;
+  text-align: center;
+  padding-block: 12px;
+  color: white;
+  font-weight: bold;
+  width: 100%;
+  background-color: transparent;
+}

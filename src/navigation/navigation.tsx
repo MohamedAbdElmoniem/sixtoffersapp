@@ -1,7 +1,7 @@
 import { useSelector } from "react-redux";
-import { Routes, Route, BrowserRouter } from "react-router-dom";
+import { Routes, Route, BrowserRouter, Navigate } from "react-router-dom";
 import { LoadingSpinner } from "../components";
-import { ErrorScreen, OffersList } from "../screens";
+import { OffersList } from "../screens";
 
 const AppNavigation = () => {
   const { loading } = useSelector((state: any) => state.app);
@@ -11,7 +11,7 @@ const AppNavigation = () => {
         <Routes>
           <Route index element={<OffersList />}></Route>
           <Route path="offers" element={<OffersList />}></Route>
-          <Route path="*" element={<ErrorScreen />}></Route>
+          <Route path="*" element={<Navigate to={"/"} />}></Route>
         </Routes>
       </BrowserRouter>
       {loading && <LoadingSpinner />}

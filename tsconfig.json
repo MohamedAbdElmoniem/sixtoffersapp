@@ -1,6 +1,7 @@
 {
     "compilerOptions": {
-        "strict": false,
+        "allowJs": true,
+        "strict": true,
         "forceConsistentCasingInFileNames": true,
         "module": "commonjs",
         "noImplicitAny": true,
@@ -8,6 +9,7 @@
         "preserveConstEnums": true,
         "sourceMap": true,
         "esModuleInterop": true,
-        "jsx": "react-jsx"
+        "jsx": "react-jsx",
+        "resolveJsonModule": true
     }
 }

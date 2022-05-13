@@ -6,8 +6,15 @@ const AxiosClient = Axios.create({
   timeout: 20000,
 });
 
-const fullfilledResponseHandler = (resp: any) => {};
-const errorResponseHandler = (err: any) => {};
+// Intercept API Success response
+const fullfilledResponseHandler = (resp: any) => {
+  return resp;
+};
+
+// Intercept API ERRORS
+const errorResponseHandler = (err: any) => {
+  return err;
+};
 
 Axios.interceptors.response.use(
   fullfilledResponseHandler,

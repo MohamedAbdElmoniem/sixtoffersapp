@@ -10,10 +10,10 @@ const getOffers = async () => {
       generalActions.saveOffers(data);
       return data;
     } else {
-      throw "error";
+      return "error";
     }
   } catch (error) {
-    throw error;
+    return error;
   } finally {
     generalActions.setLoading(false);
   }

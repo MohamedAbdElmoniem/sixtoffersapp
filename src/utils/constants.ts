@@ -1,4 +1,4 @@
-const currency_symbols = {
+const currency_symbols: any = {
   USD: "$", // US Dollar
   EUR: "€", // Euro
   CRC: "₡", // Costa Rican Colón
@@ -16,4 +16,7 @@ const currency_symbols = {
   VND: "₫", // Vietnamese Dong
 };
 
-export { currency_symbols };
+const defaultCarImg =
+  "https://www.seat.com/content/dam/public/seat-website/carworlds/compare/default-image/ghost.png";
+
+export { currency_symbols, defaultCarImg };

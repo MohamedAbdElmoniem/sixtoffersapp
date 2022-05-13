@@ -1,3 +1,4 @@
+import AppButton from "./AppButton/AppButton";
 import LoadingSpinner from "./LoadingSpinner/LoadingSpinner";
 
-export { LoadingSpinner };
+export { AppButton, LoadingSpinner };
